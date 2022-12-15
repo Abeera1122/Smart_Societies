@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HomeManaging/app/src/main/res/drawable/_access_time_24.xml" value="0.161" />
+        <entry key="..\:/HomeManaging/app/src/main/res/drawable/_calendar_today_24.xml" value="0.161" />
+        <entry key="..\:/HomeManaging/app/src/main/res/drawable/_king_bed_24.xml" value="0.161" />
         <entry key="..\:/HomeManaging/app/src/main/res/drawable/_location_on_24.xml" value="0.161" />
         <entry key="..\:/HomeManaging/app/src/main/res/drawable/_lock_24.xml" value="0.161" />
         <entry key="..\:/HomeManaging/app/src/main/res/drawable/_sign_up_mail_24.xml" value="0.161" />
@@ -29,10 +32,12 @@
         <entry key="..\:/HomeManaging/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/HomeManaging/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/HomeManaging/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/HomeManaging/app/src/main/res/layout/bill_design.xml" value="0.2" />
+        <entry key="..\:/HomeManaging/app/src/main/res/layout/events_design.xml" value="0.25" />
         <entry key="..\:/HomeManaging/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
         <entry key="..\:/HomeManaging/app/src/main/res/layout/fragment_poll.xml" value="0.20416666666666666" />
         <entry key="..\:/HomeManaging/app/src/main/res/layout/fragment_settings.xml" value="0.20416666666666666" />
-        <entry key="..\:/HomeManaging/app/src/main/res/layout/rent_house_design.xml" value="0.33" />
+        <entry key="..\:/HomeManaging/app/src/main/res/layout/rent_house_design.xml" value="0.22" />
         <entry key="..\:/HomeManaging/app/src/main/res/menu/bottom_nevigatin_item.xml" value="0.20416666666666666" />
       </map>
     </option>
