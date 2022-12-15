@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Home Managing</string>
+    <string name="app_name">Home Management</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forgot Password</string>
+    <string name="sign_up">Register</string>
+    <string name="lets_join_us">Lets Join Us</string>
+    <string name="we_would_love_you_to_join_us">we would love you to join us</string>
+    <string name="_username">Username</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="i_agree_terms_and_conditions">I agree with terms and Conditions</string>
+    <string name="i_agree_to_the_privacy_policy">I agree to the privacy policy</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_your_email_to_return_your_account">Enter email to return your account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sale_rent_house"><![CDATA[Sale & Rent House]]></string>
+    <string name="bathroom">Bathroom:</string>
+    <string name="master_room">Rooms:</string>
 </resources>
