@@ -20,21 +20,38 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        android:background="@drawable/splash"/>
+        android:background="@drawable/splash" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="Housing Management"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/splash_image"
-        android:text="Housing Management"
-        android:textSize="26sp"
-        android:gravity="center"
-        android:textStyle="bold"
+        android:layout_below="@id/label1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center"
+        android:text="Developed By: ZJ Techno"
         android:textColor="@color/white"
-        />
-
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

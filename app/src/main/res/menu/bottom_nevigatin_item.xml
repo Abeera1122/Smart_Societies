@@ -7,6 +7,12 @@
         android:title="Home"
         android:enabled="true"/>
     <item
+        android:id="@+id/_bottom_Notice"
+        android:icon="@drawable/alarm_24"
+        android:title="Notice"
+        android:enabled="true"/>
+
+    <item
         android:id="@+id/_bottom_poll"
         android:icon="@drawable/_poll_24"
         android:title="Polls"

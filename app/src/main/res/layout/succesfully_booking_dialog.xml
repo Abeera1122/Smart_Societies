@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_gravity="center"
+    android:layout_height="230dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    >
+
+    <TextView
+        android:id="@+id/_booking_successfully_text"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/booking_successfully"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/_successfully_tick"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/_booking_successfully_text"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/succesfully_image" />
+
+    <TextView
+        android:id="@+id/_dialog_box_text_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/_successfully_tick"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/leelawad"
+        android:gravity="center"
+        android:text="@string/dialog_box_text_one"
+        android:textColor="@color/light_grey"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/_dialog_box_text_two"
+        android:fontFamily="@font/leelawad"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/light_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_box_text_two"
+        android:layout_below="@id/_dialog_box_text_one"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>

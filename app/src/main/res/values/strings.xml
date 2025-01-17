@@ -15,10 +15,14 @@
     <string name="enter_your_email_to_return_your_account">Enter email to return your account</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="sale_rent_house"><![CDATA[Sale & Rent House]]></string>
+    <string name="sale_rent_house"><![CDATA[Rent House]]></string>
     <string name="bathroom">Bathroom:</string>
     <string name="master_room">Rooms:</string>
     <string name="events">Events</string>
     <string name="date">Date</string>
     <string name="time">Time</string>
+    <string name="sale_house">Sale House</string>
+    <string name="booking_successfully">Booking Successfully</string>
+    <string name="dialog_box_text_one">You’re booking sent to the owner, will review your booking details, once accepted your request, you will get notification.</string>
+    <string name="dialog_box_text_two">For more details please go to Booking History.</string>
 </resources>

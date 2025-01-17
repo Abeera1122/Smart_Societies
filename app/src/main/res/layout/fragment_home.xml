@@ -25,16 +25,20 @@
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/_home_notification_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="25dp"
-            android:src="@drawable/notifications_24" />
 
     </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/_home_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/_home_second_relative"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <TextView
         android:id="@+id/_rent_text"
@@ -55,7 +59,7 @@
         android:layout_below="@id/_rent_text"
         android:layout_marginStart="12sp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="1dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rent_recycler"
@@ -66,12 +70,40 @@
 
     </RelativeLayout>
 
+        <TextView
+            android:id="@+id/Sale_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montsrerrat_semi_bold"
+            android:text="@string/sale_house"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/_home_seven_relative"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="12sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Sale_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </RelativeLayout>
+
     <TextView
         android:id="@+id/_Events_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/montsrerrat_semi_bold"
         android:text="@string/events"
         android:textColor="@color/black"
@@ -85,7 +117,7 @@
         android:layout_below="@id/_Events_text"
         android:layout_marginStart="12dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="0dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/event_recycler"
@@ -101,7 +133,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/montsrerrat_semi_bold"
         android:text="Bills"
         android:textColor="@color/black"
@@ -115,7 +147,7 @@
         android:layout_below="@id/Bills_txt"
         android:layout_marginStart="12dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="0dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/Bill_Recycler"
@@ -126,6 +158,8 @@
 
     </RelativeLayout>
 
+    </LinearLayout>
 
+    </ScrollView>
 
 </RelativeLayout>

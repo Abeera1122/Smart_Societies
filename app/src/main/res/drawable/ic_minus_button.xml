@@ -1,0 +1,6 @@
+<vector android:autoMirrored="true" android:height="5dp"
+    android:viewportHeight="108" android:viewportWidth="72"
+    android:width="3dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/blue"
+        android:pathData="M27.4,29.4c-18.1,4.4 -30,22.7 -26.4,40.8 2.9,15.4 13.6,26 28.8,28.8 15,2.7 30.3,-4.6 37.4,-17.7 11.3,-20.9 0,-46.5 -23.1,-51.9 -6.7,-1.6 -10,-1.6 -16.7,-0zM47,65.5l0,2.5 -11,-0 -11,-0 0,-2.5 0,-2.5 11,-0 11,-0 0,2.5z" android:strokeColor="#00000000"/>
+</vector>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillPaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/xyx"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/header_file"/>
+
+        <ImageView
+            android:id="@+id/Bill_Payment_HouseBack"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="52.881774902344dp"
+            android:layout_height="47.303344726562dp"
+            android:background="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/helvetica_neuemedium"
+            android:gravity="center"
+            android:text="Bill Payment Details"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Person_Name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xyx"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montsrerrat_semi_bold"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/BillPayment_Person_Name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Person_Name_txt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/booking_edittext_bg"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:hint="AccountHolder Name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Transaction_ID_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BillPayment_Person_Name"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montsrerrat_semi_bold"
+            android:text="Transaction ID"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Transaction_ID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Transaction_ID_txt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/booking_edittext_bg"
+            android:inputType="number"
+            android:paddingStart="15dp"
+            android:hint="Enter Transaction ID"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Payment_Date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Transaction_ID"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montsrerrat_semi_bold"
+            android:text="Payment Date"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Bill_Payment_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Payment_Date_txt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="18dp"
+            android:gravity="center|start"
+            android:background="@drawable/booking_edittext_bg"
+            android:paddingStart="15dp"
+            android:hint="Select Payment Date"
+            android:textSize="18sp"
+            tools:ignore="TextFields" />
+
+        <ImageView
+            android:id="@+id/Receipt_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/Bill_Payment_date"
+            android:background="@drawable/add_photo_alternate_24"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/Send_Payment_Details"
+            android:layout_width="match_parent"
+            android:layout_height="40.967163085938dp"
+            android:layout_below="@id/Receipt_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="90dp"
+            android:background="@drawable/tutorial_btn"
+            android:text="Send Details"
+            android:textColor="@color/white" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

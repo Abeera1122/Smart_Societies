@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticeFragment">
+
+    <ImageView
+        android:id="@+id/xyx"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/header_file"/>
+
+    <ImageView
+        android:id="@+id/NoticeBack"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="15dp"
+        android:layout_width="52.881774902344dp"
+        android:layout_height="47.303344726562dp"
+        android:background="@drawable/arrow_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/helvetica_neuemedium"
+        android:gravity="center"
+        android:text="Notice"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/History_one_relative"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/xyx"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Notice_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,14 +1,289 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/xyx"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/header_file"/>
+
+    <ImageView
+        android:id="@+id/SettingsHouseBack"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="15dp"
+        android:layout_width="50.881774902344dp"
+        android:layout_height="47.303344726562dp"
+        android:background="@drawable/arrow_back" />
+
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/helvetica_neuemedium"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/_card_view_contact_us"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_below="@id/xyx"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="25dp">
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                android:drawablePadding="25dp"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:text="Profile"
+                app:drawableStartCompat="@drawable/baseline_person_24" />
+
+                <View
+                    android:id="@+id/line_167_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Booking_History"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="25dp"
+                    android:drawablePadding="25dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="Booking History"
+                    app:drawableStartCompat="@drawable/clocks_time_24" />
+
+                <View
+                    android:id="@+id/line_1_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Bill_History"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_1_account"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:drawableStart="@drawable/clocks_time_24"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:drawablePadding="25dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="Bill History" />
+
+                <View
+                    android:id="@+id/line_2_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/Complain_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_2_account"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:drawablePadding="25dp"
+                    android:gravity="center|start"
+                    android:drawableStart="@drawable/sticky_note_2_24"
+                    android:padding="10dp"
+                    android:text="New Complaints" />
+
+                <View
+                    android:id="@+id/line_22_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/Complain_Status_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_2_account"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:drawablePadding="25dp"
+                    android:gravity="center|start"
+                    android:drawableStart="@drawable/event_note_24"
+                    android:padding="10dp"
+                    android:text="Complaints Status" />
+
+                <View
+                    android:id="@+id/line_3_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Feedback_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_3_account"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:drawablePadding="25dp"
+                    android:drawableStart="@drawable/feedback_24"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="Feedback" />
+
+
+                <View
+                    android:id="@+id/line_5_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Help_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_5_account"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/ic_baseline_help_24"
+                    android:layout_marginEnd="25dp"
+                    android:drawablePadding="25dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="Help"
+                    />
+
+                <View
+                    android:id="@+id/line_6_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Log_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_6_account"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:drawableStart="@drawable/_login_24"
+                    android:drawablePadding="25dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="Log out" />
+
+                <View
+                    android:id="@+id/line_8_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@color/black" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

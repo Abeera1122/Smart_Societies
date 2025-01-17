@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComplaintStatusActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/_profile_update_relative_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="@drawable/header_file">
+
+                    <ImageView
+                        android:id="@+id/Complaint_Status_BackButton"
+                        android:layout_width="56.881713867188dp"
+                        android:layout_height="45.303344726562dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="45dp"
+                        android:background="@drawable/arrow_back" />
+
+                    <TextView
+                        android:id="@+id/_contacts_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginEnd="-2dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="Complaints Status"
+                        android:textColor="@color/light_white"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/_card_view_contact_us"
+                    android:layout_width="356dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginEnd="13dp"
+                    app:cardCornerRadius="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/History_one_relative"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/xyx"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/Complaint_Status_Recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="vertical"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>
