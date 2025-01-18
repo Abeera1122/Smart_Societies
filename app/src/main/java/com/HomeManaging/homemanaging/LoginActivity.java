@@ -70,7 +70,7 @@ public class LoginActivity extends BaseActivity {
                         HomeActivity.loadActivity(LoginActivity.this);
                         FirebaseMessaging.getInstance().subscribeToTopic("u_"+ UserDao.getInstance().getUserId());
                         FirebaseMessaging.getInstance().subscribeToTopic("u_"+ "all");
-//                        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                       startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                         dismiss();
                     }
 

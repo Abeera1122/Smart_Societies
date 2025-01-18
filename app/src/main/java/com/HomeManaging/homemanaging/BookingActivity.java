@@ -39,9 +39,9 @@ public class BookingActivity extends BaseActivity {
     TextView nameText, locationText;
 
     public static void loadActivity(Context context, Room room) {
-        Intent intent = new Intent(context, BookingActivity.class);
-        intent.putExtra("data", new Gson().toJson(room));
-        context.startActivity(intent);
+        // Intent intent = new Intent(context, BookingActivity.class);
+        // intent.putExtra("data", new Gson().toJson(room));
+        // context.startActivity(intent);
     }
 
     TextView totalTxt;
@@ -129,9 +129,9 @@ public class BookingActivity extends BaseActivity {
                         dialog.setContentView(R.layout.succesfully_booking_dialog);
                         dialog.show();
                         dialog.setOnDismissListener(dialogInterface -> {
-//                            Intent intent = new Intent(BookingActivity.this, HomeActivity.class);
-//                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                            startActivity(intent);
+                           Intent intent = new Intent(BookingActivity.this, HomeActivity.class);
+                           intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                           startActivity(intent);
                             HomeActivity.loadActivity(BookingActivity.this);
 
                         });
