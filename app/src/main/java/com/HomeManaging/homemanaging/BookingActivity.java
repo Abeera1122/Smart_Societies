@@ -39,9 +39,9 @@ public class BookingActivity extends BaseActivity {
     TextView nameText, locationText;
 
     public static void loadActivity(Context context, Room room) {
-        Intent intent = new Intent(context, BookingActivity.class);
-        intent.putExtra("data", new Gson().toJson(room));
-        context.startActivity(intent);
+        // Intent intent = new Intent(context, BookingActivity.class);
+        // intent.putExtra("data", new Gson().toJson(room));
+        // context.startActivity(intent);
     }
 
     TextView totalTxt;
